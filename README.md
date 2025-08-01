@@ -50,9 +50,6 @@ void loop() {
   int pHValue = analogRead(pHSensorPin);
   float voltage = pHValue * (5.0 / 1023.0);
   float pH = 3.5 * voltage;  // Approximation (calibration needed)
-
-  // Read Turbidity<img width="1580" height="1180" alt="ck" src="https://github.com/user-attachments/assets/5ed12a37-fad1-4f72-98e4-43a29be16324" />
-
   int turbidityValue = analogRead(turbidityPin);
   float turbidityNTU = map(turbidityValue, 0, 1023, 0, 1000);  // Rough NTU mapping
 
@@ -81,6 +78,10 @@ void loop() {
 3. Test the readings using Serial Monitor.
 4. Enclosure: Place components in a waterproof box with probes extended.
 5. (Optional) Upgrade to ESP32 for online monitoring via web dashboard.
+
+# Circuit Diagram
+
+  // Read Turbidity<img width="1580" height="1180" alt="ck" src="https://github.com/user-attachments/assets/5ed12a37-fad1-4f72-98e4-43a29be16324" />
 
 # Future Improvements
 1. ESP32 integration for cloud-based monitoring.
