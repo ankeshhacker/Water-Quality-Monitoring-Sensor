@@ -6,7 +6,7 @@ An IoT-based system for monitoring pH, turbidity, and temperature of water in re
 -> Measures pH, turbidity, and temperature in real-time.
 -> Displays readings on 16x2 LCD and Serial Monitor.
 -> Easily calibratable for different water quality standards.
--> (Optional) Can be upgraded to IoT-enabled using ESP32 to send data to a web dashboard.
+->  Can be upgraded to IoT-enabled using ESP32 to send data to a web dashboard.
 
 # Hardware Components
 1. Arduino Uno
